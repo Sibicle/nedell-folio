@@ -1,14 +1,25 @@
-$primary-color: #8e44ad;
-$secondary-color: #c39bd3;
+@import "functions";
 
-$base-size: 16px;
+$primary: #b744cc;
+$cyan:    #00ffff;
+$magenta: #ff00ff;
+$yellow:  #ffff00;
+
+$text-lighter: #d0d0d0;
+$text-light:   #c8c8c8;
+$text-dark:    #5d5d5d;
+$text-darker:  #393939;
+$text-black:   #030303;
+
+$base-font-size:   24px;
+$base-font-family: Lato;
 $base-line-height: 1.7;
-$base-font: "Georgia", serif;
-$base-color: #3a4145;
+$base-font-color:  $text-black;
+$base-font-weight: 400;
+$base-font: stack($base-font-family);
 
-$header-line-height: 1.2;
-$header-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    
+$header-font-family: "Source Sans Pro";
+$header-font: stack($header-font-family);
+
 $content-width: 1024px;
-$breakpoint: 640px;
+$breakpoint:    640px;

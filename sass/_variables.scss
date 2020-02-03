@@ -5,22 +5,22 @@ $cyan:    #00ffff;
 $magenta: #ff00ff;
 $yellow:  #ffff00;
 
-$text-lighter: #d0d0d0;
-$text-light:   #c8c8c8;
-$text-dark:    #5d5d5d;
-$text-darker:  #393939;
-$text-black:   #030303;
+$lighter: #d0d0d0;
+$light:   #c8c8c8;
+$dark:    #5d5d5d;
+$darker:  #393939;
+$black:   #030303;
 
 $base-font-size:   24px;
 $base-font-family: Lato;
-$base-font-color:  $text-black;
+$base-font-color:  $black;
 $base-font-weight: 400;
 $base-font:        stack($base-font-family);
 $base-line-height: 1.7;
 
 $header-font-family: "Source Sans Pro";
 $header-font:        stack($header-font-family);
-$header-font-color:  $text-black;
+$header-font-color:  $black;
 $header-font-weight: 800;
 $header-line-height: 1.7;
 

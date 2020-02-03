@@ -76,15 +76,15 @@ nav li a {
 }
 
 .text-lighter {
-  color: $text-lighter;
+  color: $lighter;
 }
 
 a.text-light {
-  color: #c8c8c8;
+  color: $light;
 }
 
 .active {
-  color: #B744CC;
+  color: $primary;
 }
 
 .flex {
@@ -111,9 +111,4 @@ a.text-light {
   .flex {
     align-items: flex-end;
   }
-}
-
-.hero
-
-.strikethrough {
 }

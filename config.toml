@@ -1,14 +1,4 @@
-title = "Joe Clay"
-description = """
-Joe Clay's personal website, blog and portfolio. \
-Features articles/tutorials about programming and music. \
-"""
-base_url = "https://www.seventeencups.net"
+title = "Jason Nedell"
+description = "Jason Nedell, Software Developer 😎"
+base_url = "https://nedell.com"
 compile_sass = true
-highlight_code = true
-generate_rss = true
-highlight_theme = "charcoal"
-
-[[taxonomies]]
-name = "tags"
-rss = true

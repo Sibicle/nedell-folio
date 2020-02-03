@@ -1,0 +1,30 @@
+{
+    "name": "Joe Clay",
+    "short_name": "Joe Clay",
+    "background_color": "#8e44ad",
+    "theme_color": "#8e44ad",
+    "display": "standalone",
+    "start_url": "/?utm_source=homescreen",
+    "icons": [
+        {
+            "src": "favicon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "favicon-128x128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "favicon-256x256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "favicon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

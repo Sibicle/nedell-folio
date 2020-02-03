@@ -1,0 +1,27 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* author */
+name: Jason Nedell
+contact: yo@nedell.com
+github: @sibicle
+from: Boulder, CO
+
+/* tools */
+sublime
+ruby
+jekyll
+purecss
+macos
+iterm
+fish
+asdf
+
+/* this is a magic cat */
+ _/\_
+.∧＿∧
+( ･ω･｡)つ━☆・*。
+⊂　 ノ 　　　・゜+.
+しーＪ　　　°。+ *´¨)
+　　　　　　　　　.· ´¸.·*´¨) ¸.·*¨)
+　　　　　　　　　　(¸.·´ (¸.·’* ☆

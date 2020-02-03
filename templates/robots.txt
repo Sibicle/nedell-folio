@@ -1,5 +1,2 @@
----
-layout: null
----
 User-agent: *
-Sitemap: {{site.url}}/sitemap.xml
+Sitemap: {{ config.base_url }}/sitemap.xml

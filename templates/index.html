@@ -1,117 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.title }}</title>
-
-    <meta name="description" content="{% if page.content %}{{ page.content | safe | striptags | truncate }}{% else %}{{ config.description }}{% endif %}">
-    <meta name="author" content="Joe Clay">
-
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ config.title }}">
-    <meta property="og:site_name" content="{{ config.title }}">
-    <meta property="og:image" content="{{ get_url(path="favicon-256x256.png") }}">
-    <meta property="og:type" content="website">
-
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ config.title }}">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@17cupsofcoffee">
-    <meta name="twitter:creator" content="@17cupsofcoffee">
-
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ get_url(path="favicon-192x192.png") }}">
-    <link rel="icon" type="image/png" sizes="128x128" href="{{ get_url(path="favicon-128x128.png") }}">
-    <link rel="manifest" href="{{ get_url(path="manifest.json") }}">
-    <meta name="theme-color" content="#8e44ad">
-
-    {% if config.generate_rss %}
-        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
-    {% endif %}
-
-    <link rel="stylesheet" href="{{ get_url(path="main.css") }}">
-
-    {% block extra_head %}
-    {% endblock extra_head %}
+  {% include "includes/head.html" %}
 </head>
 <body>
-    <div class="container">
-        <header class="site-header">
-            <div class="site-header__logo">
-                <a href="{{ get_url(path="/") }}">
-                    <img src="{{ get_url(path="favicon-128x128.png") }}" alt="Joe Clay" width="128" height="128">
-                </a>
-            </div>
+  {% include "includes/nav.html" %}
+  <main>
+    {% include "includes/hero.html" %}
 
-            <div class="site-header__info">
-                <a href="{{ get_url(path="/") }}">
-                    <h1 class="site-header__title">{{ config.title }}</h1>
-                </a>
-
-                <p class="site-header__bio">
-                    dev, musician, coffee disposal unit<br>
-                    <a href="https://pronoun.is/they/them" class="site-header__pronouns">
-                        they/them
-                    </a>
-                </p>
-            </div>
-
-            <nav class="site-header__links">
-                <ul class="site-header__nav">
-                    <li><a href="{{ get_url(path="/") }}">Home</a></li>
-                    <li><a href="{{ get_url(path="projects") }}">Projects</a></li>
-                    <li><a href="{{ get_url(path="tags") }}">Tags</a></li>
-                </ul>
-                <ul class="site-header__social">
-                    <li>
-                        <a href="https://twitter.com/17cupsofcoffee" aria-label="Twitter">
-                            <svg class="icon icon-twitter" aria-hidden="true">
-                                <use xlink:href="{{ get_url(path="symbol-defs.svg") }}#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/17cupsofcoffee" aria-label="GitHub">
-                            <svg class="icon icon-github" aria-hidden="true">
-                                <use xlink:href="{{ get_url(path="symbol-defs.svg") }}#icon-github"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://stackoverflow.com/users/5436257/joe-clay" aria-label="Stack Overflow">
-                            <svg class="icon icon-stackoverflow" aria-hidden="true">
-                                <use xlink:href="{{ get_url(path="symbol-defs.svg") }}#icon-stackoverflow"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:joe@seventeencups.net" aria-label="Email">
-                            <svg class="icon icon-mail" aria-hidden="true">
-                                <use xlink:href="{{ get_url(path="symbol-defs.svg") }}#icon-mail"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ get_url(path="rss.xml") }}" aria-label="RSS Feed">
-                            <svg class="icon icon-rss" aria-hidden="true">
-                                <use xlink:href="{{ get_url(path="symbol-defs.svg") }}#icon-rss"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <main class="site-content">
-        </main>
-
-        <footer class="site-footer">
-            © 2017-2019 <a href="{{ get_url(path="/") }}">Joe Clay</a>. Powered by <a href="https://www.getzola.org/">Zola</a>.
-            <br>
-            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-            <br>
-            Icons from <a href="http://fontawesome.com">Font Awesome</a>, packaged with <a href="http://icomoon.io/">IcoMoon</a>.
-        </footer>
-    </div>
+    {% include "includes/footer.html" %}
+  </main>
 </body>
 </html>

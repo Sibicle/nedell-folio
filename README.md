@@ -1,3 +1,3 @@
 # Jason Nedell's portfolio site
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f890a53c-5aa5-4637-a56e-99371a36dba4/deploy-status)](https://app.netlify.com/sites/wonderful-swanson-09cd9a/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/211af14a-e30c-4e2f-9c1a-7e1deae9957c/deploy-status)](https://app.netlify.com/sites/nedell/deploys)

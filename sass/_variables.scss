@@ -13,13 +13,16 @@ $text-black:   #030303;
 
 $base-font-size:   24px;
 $base-font-family: Lato;
-$base-line-height: 1.7;
 $base-font-color:  $text-black;
 $base-font-weight: 400;
-$base-font: stack($base-font-family);
+$base-font:        stack($base-font-family);
+$base-line-height: 1.7;
 
 $header-font-family: "Source Sans Pro";
-$header-font: stack($header-font-family);
+$header-font:        stack($header-font-family);
+$header-font-color:  $text-black;
+$header-font-weight: 800;
+$header-line-height: 1.7;
 
 $content-width: 1024px;
 $breakpoint:    640px;

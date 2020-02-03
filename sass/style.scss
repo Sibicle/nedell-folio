@@ -9,6 +9,28 @@ body {
   font-weight: $base-font-weight;
 }
 
+h1, h2 {
+  font-size:   132px;
+  font-family: $header-font;
+  font-weight: $header-font-weight;
+}
+
+h3,
+h4 {
+  font-family: $base-font;
+  font-size:   30px;
+  line-height: 0.75;
+  margin: 1.3rem 0;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 300;
+}
+
 a {
   color: #B744CC;
   text-decoration: none;
@@ -49,16 +71,20 @@ nav li a {
   text-decoration: none;
 }
 
+.text-strikethrough {
+  text-decoration-line: line-through;
+}
+
+.text-lighter {
+  color: $text-lighter;
+}
+
 a.text-light {
-  color: #C8C8C8;
+  color: #c8c8c8;
 }
 
-a.active {
+.active {
   color: #B744CC;
-}
-
-.hero .flex {
-  align-items: flex-end;
 }
 
 .flex {
@@ -67,45 +93,27 @@ a.active {
 
 .hero {
   align-items: flex-end;
+
+  img {
+    max-width: 10rem;
+    float: left;
+  }
+
+  h1 {
+    float: left;
+    margin: 0 0 -1.5rem 1rem;
+  }
+
+  .container {
+    margin-top: 3rem;
+  }
+
+  .flex {
+    align-items: flex-end;
+  }
 }
 
-.hero img {
-  max-width: 10rem;
-  float: left;
-}
-
-.hero h1 {
-  float: left;
-  font-family: "Source Sans Pro";
-  font-weight: 800;
-  font-size: 132px;
-  margin: 0 0 -1.5rem 1rem;
-}
-
-.hero h2,
-.hero p {
-  font-family: Lato;
-  font-size: 30px;
-  line-height: 80%;
-}
-
-.hero h2 {
-  font-weight: 700;
-}
-
-.hero p {
-  font-weight: 400;
-  font-size: 28px;
-}
-
-.hero .container {
-  margin-top: 3rem;
-}
+.hero
 
 .strikethrough {
-  text-decoration-line: line-through;
-}
-
-.hero .strikethrough {
-  color: #D0D0D0;
 }

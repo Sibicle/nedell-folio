@@ -26,7 +26,7 @@ h3,
 h4 {
   font-family: $base-font;
   font-size:   30px;
-  line-height: 0.75;
+  line-height: 1.6;
   margin:      1.5rem 0;
 }
 
@@ -48,8 +48,13 @@ a {
   text-decoration: none;
 }
 
+ul {
+  line-height: 1.4;
+}
+
 .m-t-xl { margin-top: 3rem }
 .m-b-lg { margin-bottom: 2rem }
+.m-b-xxxl{ margin-bottom: 12rem }
 
 .text-strikethrough {
   text-decoration-line: line-through;
@@ -130,6 +135,13 @@ nav {
 
   .flex {
     align-items: flex-end;
+  }
+}
+
+.project {
+
+  h3 {
+    line-height: 1.2;
   }
 }
 

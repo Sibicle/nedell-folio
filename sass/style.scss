@@ -64,7 +64,7 @@ a {
 }
 
 .bg-dark {
-  color: $dark;
+  background-color: $darkest;
 }
 
 a.text-light {
@@ -131,10 +131,6 @@ nav {
   .flex {
     align-items: flex-end;
   }
-}
-
-#footer-container {
-  background-color: $darkest;
 }
 
 footer {

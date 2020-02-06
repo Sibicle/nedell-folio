@@ -139,6 +139,44 @@ nav {
   h3 {
     line-height: 1.2;
   }
+.skill {
+  span {
+    display: block;
+  }
+
+  .number {
+    display: none;
+  }
+
+  .progress {
+    background: $darkest;
+    margin: 0.2rem 5rem 0.2rem 0;
+    overflow: hidden;
+  }
+
+  .progress-bar {
+    height: 5px;
+    margin: 2px;
+    width: calc( 100% - 4px );
+    background-image:
+      linear-gradient(to right, $cyan, $magenta, $yellow);
+      background-size: 230px 100%;
+  }
+
+  .progress-1  { width: 10% }
+  .progress-2  { width: 20% }
+  .progress-3  { width: 30% }
+  .progress-4  { width: 40% }
+  .progress-5  { width: 50% }
+  .progress-6  { width: 60% }
+  .progress-7  { width: 70% }
+  .progress-8  { width: 80% }
+  .progress-9  { width: 90% }
+  .progress-10 { }
+
+  li {
+    margin-bottom: 1rem;
+  }
 }
 
 footer {

@@ -90,10 +90,10 @@ footer {
 }
 
 nav {
-  height: 5rem;
-  padding: 1.5rem 0;
+  height: 8rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   img {
     max-height: 6rem;
@@ -104,6 +104,7 @@ nav {
     list-style-type: none;
     display: flex;
     align-items: center;
+    margin: 1rem 0;
   }
 
   li a {

@@ -1,0 +1,65 @@
+{% import "_macros.html" as macros %}
+{% set langs = load_data(path="content/skills/languages.json") %}
+{% set libs  = load_data(path="content/skills/libraries.json") %}
+{% set tools = load_data(path="content/skills/tools.json") %}
+{% set irl   = load_data(path="content/skills/irl.json") %}
+
+<section class="skill">
+  <h2 class="mb-32">
+    What can I do?
+  </h2>
+
+  <div class="flex mb-32">
+    <div class="w-1/4">
+      <ul>
+        <li>
+          <h3>Languages</h3>
+        </li>
+        {% for lang in langs %}
+        <li>
+          {{ macros::skill_item(name=lang.name, rating=lang.rating) }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="w-1/4">
+      <ul>
+        <li>
+          <h3>Libraries</h3>
+        </li>
+        {% for lang in langs %}
+        <li>
+          {{ macros::skill_item(name=lang.name, rating=lang.rating) }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="w-1/4">
+      <ul>
+        <li>
+          <h3>Tools</h3>
+        </li>
+        {% for lang in langs %}
+        <li>
+          {{ macros::skill_item(name=lang.name, rating=lang.rating) }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="w-1/4">
+      <ul>
+        <li>
+          <h3>IRL</h3>
+        </li>
+        {% for lang in langs %}
+        <li>
+          {{ macros::skill_item(name=lang.name, rating=lang.rating) }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+{% macro skill_item(name, rating) %}
+{{ name }}
+{% if rating %}
+<span class="progress progress-{{ rating }}">
+  <span class="progress-bar">
+  </span>
+  <span class="number">
+    {{ rating }}/10
+  </span>
+</span>
+{% endif %}
+{% endmacro skill_item %}

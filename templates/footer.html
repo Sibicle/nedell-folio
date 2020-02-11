@@ -20,18 +20,22 @@
           Menu
         </li>
         <li>
-          <a href="#">
-          About
+          <a href="#work">
+            Work
           </a>
         </li>
         <li>
-          <a href="#">
-          Projects
+          <a href="#projects">
+            Projects
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#skills">
             Skills
+          </a>
+        <li>
+          <a href="#me">
+            Me
           </a>
         </li>
       </ul>
@@ -99,3 +103,10 @@
     </ul>
   </footer>
 </div>
+
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 600,
+    speedAsDuration: true
+  });
+</script>

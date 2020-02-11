@@ -28,9 +28,9 @@
         <li>
           <h3>Libraries</h3>
         </li>
-        {% for lang in langs %}
+        {% for lib in libs %}
         <li>
-          {{ macros::skill_item(name=lang.name, rating=lang.rating) }}
+          {{ macros::skill_item(name=lib.name, rating=lib.rating) }}
         </li>
         {% endfor %}
       </ul>
@@ -41,9 +41,9 @@
         <li>
           <h3>Tools</h3>
         </li>
-        {% for lang in langs %}
+        {% for tool in tools %}
         <li>
-          {{ macros::skill_item(name=lang.name, rating=lang.rating) }}
+          {{ macros::skill_item(name=tool.name, rating=tool.rating) }}
         </li>
         {% endfor %}
       </ul>
@@ -54,9 +54,9 @@
         <li>
           <h3>IRL</h3>
         </li>
-        {% for lang in langs %}
+        {% for thing in irl %}
         <li>
-          {{ macros::skill_item(name=lang.name, rating=lang.rating) }}
+          {{ macros::skill_item(name=thing.name, rating=thing.rating) }}
         </li>
         {% endfor %}
       </ul>

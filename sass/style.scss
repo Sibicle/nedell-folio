@@ -177,22 +177,21 @@ nav {
   .progress-bar {
     height: 5px;
     margin: 2px;
-    width: calc( 100% - 4px );
     background-image:
       linear-gradient(to right, $cyan, $magenta, $yellow);
       background-size: 230px 100%;
   }
 
-  .progress-1  { width: 10% }
-  .progress-2  { width: 20% }
-  .progress-3  { width: 30% }
-  .progress-4  { width: 40% }
-  .progress-5  { width: 50% }
-  .progress-6  { width: 60% }
-  .progress-7  { width: 70% }
-  .progress-8  { width: 80% }
-  .progress-9  { width: 90% }
-  .progress-10 { }
+  .progress-1  { width: calc(10%  - 0.5rem) }
+  .progress-2  { width: calc(20%  - 0.7rem) }
+  .progress-3  { width: calc(30%  - 0.9rem) }
+  .progress-4  { width: calc(40%  - 1.1rem) }
+  .progress-5  { width: calc(50%  - 1.3rem) }
+  .progress-6  { width: calc(60%  - 1.5rem) }
+  .progress-7  { width: calc(70%  - 1.7rem) }
+  .progress-8  { width: calc(80%  - 1.9rem) }
+  .progress-9  { width: calc(90%  - 2.1rem) }
+  .progress-10 { width: calc(100% - 2.2rem) }
 
   li {
     margin-bottom: 1rem;

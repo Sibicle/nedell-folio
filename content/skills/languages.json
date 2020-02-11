@@ -1,18 +1,30 @@
 [
   {
     "name"   : "PHP",
-    "rating" : 1
-  },
-  {
-    "name"   : "JavaScript",
-    "rating" : 2
+    "rating" : 10
   },
   {
     "name"   : "Ruby",
-    "rating" : 3
+    "rating" : 8
+  },
+  {
+    "name"   : "JavaScript",
+    "rating" : 7
   },
   {
     "name"   : "Java",
+    "rating" : 5
+  },
+  {
+    "name"   : "Rust",
+    "rating" : 3
+  },
+  {
+    "name"   : "Swift",
     "rating" : 4
+  },
+  {
+    "name"   : "Haskell",
+    "rating" : 2
   }
 ]

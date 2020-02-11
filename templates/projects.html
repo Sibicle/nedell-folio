@@ -1,26 +1,24 @@
+{% set dsr = get_page(path="projects/dsr.md") %}
+
 <section id="projects">
   <h2 class="mb-32">
     What have I made?
   </h2>
 
-  <div class="flex items-center mb-64">
-    <div class="w-3/5 mr-8">
+  <div class="flex justify-center mb-16">
+    <div class="w-4/5">
       <h3>
-        The Donor Sibling Registry<br>
-        community engagement platform
+        {{ dsr.title }}
       </h3>
+      <p>
+        {{ dsr.description | markdown | safe }}
+      </p>
+    </div>
+  </div>
 
-      <ul>
-        <li>
-          Complete redesign of legacy PHP web application.
-        </li>
-        <li>
-          Architected an unmaintainable amalgamation of code into modern, cohesive, maintanable codebase.
-        </li>
-        <li>
-          Architected an unmaintainable amalgamation of code into modern, cohesive, maintanable codebase.
-        </li>
-      </ul>
+  <div class="flex items-center mb-64">
+    <div class="w-4/5 mr-8">
+      {{ dsr.content | safe }}
     </div>
 
     <div class="w-2/5">

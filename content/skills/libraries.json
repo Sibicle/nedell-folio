@@ -34,5 +34,9 @@
   {
     "name"   : "Laravel",
     "rating" : 8
+  },
+  {
+    "name"   : "Tailwind",
+    "rating" : 10
   }
 ]

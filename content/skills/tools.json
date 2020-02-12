@@ -38,5 +38,17 @@
   {
     "name"   : "iOS",
     "rating" : 6
+  },
+  {
+    "name"   : "Sketch",
+    "rating" : 10
+  },
+  {
+    "name"   : "Photoshop",
+    "rating" : 10
+  },
+  {
+    "name"   : "Microsoft Word ☹️",
+    "rating" : 1
   }
 ]

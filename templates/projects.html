@@ -1,10 +1,13 @@
 {% set dsr = get_page(path="projects/dsr.md") %}
+{% set bellwether = get_page(path="projects/bellwether.md") %}
+{% set sparkfun = get_page(path="projects/sparkfun.md") %}
 
 <section id="projects">
   <h2 class="mb-32">
     What have I made?
   </h2>
 
+{# DSR #}
   <div class="flex justify-center mb-16">
     <div class="w-4/5">
       <h3>
@@ -16,8 +19,8 @@
     </div>
   </div>
 
-  <div class="flex items-center mb-64">
-    <div class="w-4/5 mr-8">
+  <div class="flex items-center mb-32">
+    <div class="w-3/5 mr-8">
       {{ dsr.content | safe }}
     </div>
 
@@ -26,62 +29,46 @@
     </div>
   </div>
 
-  <div class="flex items-center mb-64">
+{# Bellwether #}
+  <div class="flex justify-center mb-16">
+    <div class="w-4/5">
+      <h3>
+        {{ bellwether.title }}
+      </h3>
+      <p>
+        {{ bellwether.description | markdown | safe }}
+      </p>
+    </div>
+  </div>
+
+  <div class="flex items-center mb-32">
     <div class="w-2/5">
       <img src="{{ get_url(path='img/coffee.svg') }}" alt="">
     </div>
 
     <div class="w-3/5 ml-8 mt-8">
-      <h3>
-        The Bellwether Coffee <br>
-        internet-connected coffee roaster <br>
-        with companion iPad app <br>
-      </h3>
+      {{ bellwether.content | safe }}
+    </div>
+  </div>
 
-      <ul>
-        <li>
-          Oversaw design, UX, and development of admin panel, business dashboard, and companion iPad app.
-        </li>
-        <li>
-          Worked with firmware engineer to diagnose and repair entire communication chain between web and roaster hardware microcontroller.
-        </li>
-      </ul>
+{# SparkFun #}
+  <div class="flex justify-center mb-16">
+    <div class="w-4/5">
+      <h3>
+        {{ sparkfun.title }}
+      </h3>
+      <p>
+        {{ sparkfun.description | markdown | safe }}
+      </p>
     </div>
   </div>
 
   <div class="flex items-center mb-32">
-    <div class="w-3/5 mr-16 align-middle">
-      <h3>
-        The enterprise resource management software <br>
-        for SparkFun Electronic’s business logistics
-      </h3>
-
-      <ul>
-        <li>
-          Developed features and maintenance of custom php / postgres ERP web application.
-        </li>
-        <li>
-          Worked on complex projects in code with high technical debt and lost domain knowledge.
-        </li>
-        <li>
-Collaborated with non-technical stakeholders to define realistic requirements
-        </li>
-        <li>
-Transformed requirements into specifications, with an eye for rigor and maintainability.
-        </li>
-        <li>
-Aimed for future maintainability by establishing boilerplate and best practices.
-        </li>
-        <li>
-Interfaced with ops in developing continuous integration, unit test and deploy procedures.
-        </li>
-        <li>
-Acted as standing Director during turbulent transitional period—provided day-to-day structure, and worked with Director suite to develop interview process for new Director.
-        </li>
-      </ul>
+    <div class="w-3/5 mr-8">
+      {{ sparkfun.content | safe }}
     </div>
 
-    <div class="w-2/5 align-middle">
+    <div class="w-2/5">
       <img src="{{ get_url(path='img/mac.svg') }}" alt="">
     </div>
   </div>

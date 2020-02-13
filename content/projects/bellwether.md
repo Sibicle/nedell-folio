@@ -4,7 +4,7 @@ description = "Bellwether's product is an internet-connected, zero-emission vent
 +++
 
 * **Problem:** Complex web of fractured, buggy components that didn’t talk to each other. Similarly confused internal team that needed a better way to understand and work with this system.
-* **Solution:** Create an integrated and simplified system between roaster and companion apps that works seamlessly for both internal users and external users
+* **Solution:** Create an integrated and simplified system between roaster and companion apps that works seamlessly for both internal users and external users.
 * Led the ongoing development of iPad and web apps.
 * Designed API specifications to integrate disparate system components.
 * Debugged comples interaction between coffee roaster embedded hardware, \*nix bridge, iPad and web app.

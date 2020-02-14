@@ -1,6 +1,6 @@
 +++
 title = "The Donor Sibling Registry community engagement platform"
-description = "The DSR is _the_ hub for donor-conceived people, their families, and interested donors. Members are able to connect with each other and share their experiences. The site as a thriving userbase, but was build in PHP in the early 2000's, patched multiple times over the years, and in desperate need of a rebuild."
+description = "The DSR is _the_ hub for donor-conceived people, their families, and interested donors. Members are able to connect with each other and share their experiences. The site has a thriving userbase, but was build in PHP in the early 2000's, patched multiple times over the years, and in desperate need of a rebuild."
 +++
 
 * Extensively analyzed the old site's code, to be able to replicate functionality on the new site.

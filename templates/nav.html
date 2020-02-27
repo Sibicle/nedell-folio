@@ -1,30 +1,37 @@
-<nav>
-  <img src="{{ get_url(path='img/logo.svg') }}" alt="JN" width="100rem">
-  <ul>
-    <li>
-      <a data-scroll href="#projects">
-        Projects
-      </a>
-    </li>
-    <li>
-      <a data-scroll href="#skills">
-        Skills
-      </a>
-    </li>
-    <li>
-      <a data-scroll href="#work">
-        Work
-      </a>
-    </li>
-    <li>
-      <a data-scroll href="#me"">
-        Me
-      </a>
-    </li>
-    <li>
-      <a href="mailto:yo@nedell.com" class="text-light">
-        yo@nedell.com
-      </a>
-    </li>
-  </ul>
+<nav class="fixed w-screen h-32 top-0 bg-white">
+  <div class="flex items-center max-w-5xl mx-auto">
+    <img class="flex-none w-32 h-32"
+         src="{{ get_url(path='img/logo.svg') }}"
+         alt="JN"
+    >
+    <ul class="flex flex-grow flex-shrink-0
+               align-center justify-end list-none mx-4"
+    >
+      <li>
+        <a class="text-darker grad-hover" data-scroll href="#projects">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a class="text-darker grad-hover"  data-scroll href="#skills">
+          Skills
+        </a>
+      </li>
+      <li>
+        <a class="text-darker grad-hover"  data-scroll href="#work">
+          Work
+        </a>
+      </li>
+      <li>
+        <a class="text-darker grad-hover"  data-scroll href="#me">
+          Me
+        </a>
+      </li>
+      <li>
+        <a href="mailto:yo@nedell.com" class="text-light">
+          yo@nedell.com
+        </a>
+      </li>
+    </ul>
+  </div>
 </nav>

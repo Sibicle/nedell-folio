@@ -12,6 +12,12 @@ $darker:  #393939;
 $darkest: #262626;
 $black:   #030303;
 
+$grad-hover: $darker 0% 25%,
+             $yellow 37.5%,
+             $magenta 50%,
+             $cyan 62.5%,
+             $magenta 75% 100%;
+
 $base-font-size:   24px;
 $base-font-family: Lato;
 $base-font-color:  $black;

@@ -1,10 +1,8 @@
 @charset "utf-8";
 @import  "variables";
+@import  "utilities";
 
 body {
-  width:  100%;
-  height: 100%;
-
   font-size:   $base-font-size;
   font-family: $base-font;
   font-weight: $base-font-weight;
@@ -13,11 +11,6 @@ body {
 h1, h2 {
   font-family: $header-font;
   font-weight: $header-font-weight;
-}
-
-h2 {
-  text-align: center;
-  font-size: 72px;
 }
 
 h3 {
@@ -44,6 +37,10 @@ ul {
   line-height: 1.4;
 }
 
+.text-light {
+  color: $light;
+}
+
 .text-lighter {
   color: $lighter;
 }
@@ -52,47 +49,28 @@ ul {
   color: $darker;
 }
 
+.grad-link {
+  @include gradient(to right, $grad-hover);
+  background-size: 400% 100%;
+  background-position: left center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all .8s ease-in-out;
+}
+
+.grad-link:hover,
+.active {
+  background-position: right center !important;
+  transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
 .bg-dark {
   background-color: $darkest;
 }
 
-a.text-light {
-  color: $light;
-}
-
-.active {
-  color: $primary;
-}
-
-nav,
-section,
-footer {
-  max-width: 70rem;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 nav {
-  height: 8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  img {
-    max-height: 6rem;
-    max-width: 100%;
-  }
-
-  ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    margin: 1rem 0;
-  }
-
   li a {
     font-size: 20px;
-    color: #3B3A3A;
     padding: 0.5rem 2rem;
     text-decoration: none;
   }

@@ -1,0 +1,20 @@
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 600,
+    speedAsDuration: true
+  });
+</script>
+<script>
+  var anchors = [ "projects", "skills", "work", "me" ]
+  var controller = new ScrollMagic.Controller({});
+
+  anchors.forEach(e => {
+    var anchor     = "#".concat(e);
+    var linkAnchor = "#link-".concat(e);
+    var height     = document.querySelector(anchor).offsetHeight;
+    new ScrollMagic.Scene({triggerElement: anchor})
+                   .setClassToggle(linkAnchor, "active")
+                   .duration(height)
+                   .addTo(controller);
+  })
+</script>

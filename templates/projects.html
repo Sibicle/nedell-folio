@@ -2,8 +2,8 @@
 {% set bellwether = get_page(path="projects/bellwether.md") %}
 {% set sparkfun = get_page(path="projects/sparkfun.md") %}
 
-<section id="projects">
-  <h2 class="mb-32">
+<section id="projects" class="max-w-5xl mx-auto py-16">
+  <h2 class="text-6xl text-center mb-24">
     What have I made?
   </h2>
 
@@ -63,7 +63,7 @@
     </div>
   </div>
 
-  <div class="flex items-center mb-32">
+  <div class="flex items-center">
     <div class="w-3/5 mr-8">
       {{ sparkfun.content | safe }}
     </div>

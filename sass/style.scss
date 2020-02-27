@@ -15,26 +15,18 @@ h1, h2 {
   font-weight: $header-font-weight;
 }
 
-h1 { font-size: 132px }
-
 h2 {
   text-align: center;
   font-size: 72px;
 }
 
-h3,
-h4 {
-  font-family: $base-font;
-  font-size:   30px;
-  line-height: 1.6;
-  margin:      0 0 1.5rem 0;
-}
-
 h3 {
+  font-family: $base-font;
   font-weight: 400;
 }
 
 h4 {
+  font-family: $base-font;
   font-weight: 300;
 }
 
@@ -50,10 +42,6 @@ a {
 
 ul {
   line-height: 1.4;
-}
-
-.text-strikethrough {
-  text-decoration-line: line-through;
 }
 
 .text-lighter {
@@ -76,15 +64,10 @@ a.text-light {
   color: $primary;
 }
 
-.flex {
-  display: flex;
-}
-
 nav,
 section,
 footer {
   max-width: 70rem;
-  padding: 3rem 2rem;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -112,26 +95,6 @@ nav {
     color: #3B3A3A;
     padding: 0.5rem 2rem;
     text-decoration: none;
-  }
-}
-
-.hero {
-  .container {
-    margin-top: 3rem;
-  }
-
-  img {
-    max-width: 10rem;
-    float: left;
-  }
-
-  h1 {
-    float: left;
-    margin: 0 0 -1.5rem 1rem;
-  }
-
-  .flex {
-    align-items: flex-end;
   }
 }
 
@@ -247,3 +210,31 @@ footer {
     }
   }
 }
+
+// Hack to add Tailwind-style responsive classes without using PostCSS
+
+.text-7xl { font-size: 6rem; }
+.text-8xl { font-size: 8rem; }
+#hero h1 { line-height: 4.7rem }
+
+@media (min-width: 640px) {
+  .sm\:text-7xl { font-size: 6rem; }
+  .sm\:text-8xl { font-size: 8rem; }
+  #hero h1 { line-height: 8rem }
+}
+
+@media (min-width: 768px) {
+  .md\:text-7xl { font-size: 6rem; }
+  .md\:text-8xl { font-size: 8rem; }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-7xl { font-size: 6rem; }
+  .lg\:text-8xl { font-size: 8rem; }
+}
+
+@media (min-width: 1280px) {
+  .xl\:text-7xl { font-size: 6rem; }
+  .xl\:text-8xl { font-size: 8rem; }
+}
+
